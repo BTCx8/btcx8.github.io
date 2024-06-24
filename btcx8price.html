@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>btcx8 Price</title>
-    <link href="styles.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Btcx8 Price</title>
+<!-- - -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
+             type="text/javascript"></script>
+<script src="/js/highcharts.js" type="text/javascript"></script>
+<!-- - -->
+<script type="text/javascript">
+var chart1;
+$(document).ready(function(){
+  chart1 = new Highcharts.Chart({
+    chart: {renderTo: 'container1'},
+    series: [{data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]}]
+  });
+});
+</script>
+<!-- - -->
 </head>
 <body>
-    <main>
-        1 Btcx8
-        <div class="coin-container" id="bitcoin">
-            <div class="coin bitcoin-item">₿</div>
-        </div>
-        =
-        <span id="usd-amount"></span>
-        <div class="coin-container" id="dollar">
-        </div>
-    </main>
+<div id="container1" style="width: 700px; height: 400px "></div>
 </body>
 </html>

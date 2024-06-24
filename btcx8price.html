@@ -1,25 +1,25 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Btcx8 Price</title>
-<!-- - -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
-             type="text/javascript"></script>
-<script src="/js/highcharts.js" type="text/javascript"></script>
-<!-- - -->
-<script type="text/javascript">
-var chart1;
-$(document).ready(function(){
-  chart1 = new Highcharts.Chart({
-    chart: {renderTo: 'container1'},
-    series: [{data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]}]
-  });
-});
-</script>
-<!-- - -->
+  <title>Live Btcx8 Price</title>
 </head>
+
 <body>
-<div id="container1" style="width: 700px; height: 400px "></div>
+  <h1>Current BTCX8 Price: <br>
+    <span></span>
+  </h1>
+  <p>Last updated on:
+    <span id="updTime"></span>
+  </p>
+  <button>Get Latest Price</button>
+  <div>
+    <select name="currency" id="currency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">POUND</option>
+    </select>
+  </div>
+  <div id="disclaimer"></div>
 </body>
+
 </html>
